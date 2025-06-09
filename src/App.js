@@ -12,10 +12,10 @@ function App() {
     
     const formData = new FormData();
     formData.append('id', id);
-    formData.append('csv', file);
+    formData.append('data', file);
 
     try {
-      const response = await axios.post('YOUR_API_ENDPOINT_HERE', formData, {
+      const response = await axios.post('https://awakenart.app.n8n.cloud/webhook-test/06696ea7-9dc7-464a-873b-3feb095b0874', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -55,10 +55,10 @@ function App() {
             </div>
             
             <div className="form-group">
-              <label htmlFor="csv">VidIQ CSV Export:</label>
+              <label htmlFor="data">VidIQ CSV Export:</label>
               <input
                 type="file"
-                id="csv"
+                id="data"
                 accept=".csv"
                 onChange={(e) => setFile(e.target.files[0])}
                 required
