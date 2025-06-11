@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="branding">
-          <h1>Awaken Health </h1>
+          <h1>Awaken Art</h1>
           <p className="tagline">Marketing Automation Page</p>
         </div>
         
